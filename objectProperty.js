@@ -26,5 +26,9 @@ const students = [
 ];
 const names = students.map( s => s.name);
 const ids = students.map( x => x.id);
+const bigger = students.filter(x => x.id <20);
+const biggerOne = students.find( x => x.id < 20);
 console.log(names);
 console.log(ids);
+console.log(bigger);
+console.log(biggerOne);
