@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json vs jsObject</title>
+</head>
+<body>
+    <h1>json(javaScript Object Notation)</h1>
+    <h1>JsonData and jsObject Data</h1>
+    <h3>how to send data to a server and receive data from a server</h3>
+    <script>
+        const user = {
+            id:1001,
+            name: "Nayemul SHasan",
+            job:{
+                title: "Software Engineering",
+                company: "Google",
+                salary: 50000
+
+            },
+            dressCode: [25,67,98,12,39],
+            friends:["Noor","omra Haque", "mahmudul"]
+        }
+        //JSON.stringify() কাজ হলো ডাটাকে সার্ভারে আকারে JSON পাঠানো স্টোর কারার জন্য
+        const userJSON = JSON.stringify(user);
+        console.log(userJSON);
+        //JSON.parse() কাজ হলো JSON ডাটাকে javaScript Object data তে রুপান্তর করা 
+        const jsObjectFromJson = JSON.parse(userJSON);
+        console.log(jsObjectFromJson);
+    </script>
+</body>
+</html>
