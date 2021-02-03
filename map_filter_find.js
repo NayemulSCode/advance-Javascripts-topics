@@ -8,6 +8,7 @@ const output = [];
 // }
 // console.log(output);
 // map function এর তিনটি প্যারামিটার থাকে ১। এলিমেন্ট(element) 2। ইন্ডেক্স(index) 3.অ্যারে(array)
-numbers.map(function(element, index, array){
-    console.log(element, index, array);
+const result =  numbers.map(function(element){
+    return element * element;
 })
+console.log(result);
