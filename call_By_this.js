@@ -13,6 +13,7 @@ const Person ={
         return this.salary;
     }
 }
-console.log(Person.firstName);
+Person.getFullName();
 Person.bill(1550);
 console.log(Person.salary);
+console.log(typeof(Person));
